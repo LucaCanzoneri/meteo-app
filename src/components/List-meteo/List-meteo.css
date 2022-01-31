@@ -1,0 +1,7 @@
+.city__card {
+    background: radial-gradient(circle, #011354 0%, #5B9FE3 100%);
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.17);
+    margin-bottom: 15px;
+    border-radius: 25px;
+    padding: 20px;
+}

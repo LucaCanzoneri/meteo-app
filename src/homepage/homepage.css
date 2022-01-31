@@ -1,0 +1,223 @@
+.multiple_cards__container {
+    padding: 0 10px 10px;
+}
+
+
+.selection__active {
+    background: radial-gradient(circle, #5374E7 0%, #77B9F5 100%);
+    color: #FFFFFF !important;
+}
+
+.selection {
+    background-color: #FFFFFF;
+    color: #01175F;
+    padding: 20px 30px;
+    border: none;
+    font-weight: 700;
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+.multiple_cards__selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.multiple__box {
+    height: 385px;
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.5);
+    border-radius: 0 0 35px 35px;
+}
+
+.single__box {
+    width: 200px;
+    height: 305px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.17);
+    background-color: rgba(255,255,255,0.1);
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.single_big__box {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.row-this-month {
+    padding: 30px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.17);
+    color: #FFFFFF;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.monthInfo-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: left;
+}
+
+.thisWeek {
+    border-radius: 35px 0 0;
+}
+
+.thisMonth {
+    border-radius: 0 35px 0 0;
+}
+
+
+.searchBox {
+    position: relative;
+}
+
+.search_input {
+    width: 100%;
+    padding: 50px 40px;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.17);
+    border-radius: 25px;
+}
+
+.search_button {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    background: radial-gradient(circle, #5374E7 0%, #77B9F5 100%);
+}
+
+.search-container {
+    padding: 20px;
+    text-align: left;
+}
+
+.search_button {
+    padding: 0 15px;
+}
+
+input, input::placeholder {
+    color: #B8B8B8;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+.localization__button {
+    border-radius: 25px;
+    background: radial-gradient(circle, #5374E7 0%, #77B9F5 100%);
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.17);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    width: 100%;
+    align-items: center;
+}
+
+.localization__text {
+    color: #FFFFFF;
+}
+
+/* Box list meteo */
+.box-meteo-container {
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+  
+.box-dropdown-meteo {
+    min-height: fit-content;
+}
+
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+.search-box:hover {
+    text-decoration: underline;
+}
+  
+  
+.personal-container {
+    padding: 40px 50px;
+}
+
+
+
+.today__title {
+    color: #01175F;
+    font-weight: 700;
+    margin: 0 0 20px 10px;
+}
+
+.today__box {
+    min-height: 350px;
+    width: 100%;
+    background: radial-gradient(circle, #5374E7 0%, #77B9F5 100%);
+    box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.5);
+    border-radius: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+  
+
+@media (min-width: 470px) { 
+    .multiple__box {
+        border-radius: 0 35px 35px 35px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .single__box {
+        width: 148px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 992px) {    
+    .box-dropdown-meteo {
+        min-height: 440px;
+    }
+}
+
+@media (min-width: 1120px) { 
+    .vertical_line {
+      position: absolute;
+      display: flex !important;
+      align-items: center;
+      flex-direction: column;
+      bottom: 0;
+      left: 50%;
+      right: 50%;
+    }
+    .today__box {
+      min-height: 385px !important;
+      padding: 45px 35px 0 !important;
+    }
+}
